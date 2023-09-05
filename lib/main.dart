@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getxapp/darkandlight.dart';
-
+import 'package:getxapp/GetxImagePicker/imagepicker.dart';
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -19,8 +17,16 @@ class MyApp extends StatelessWidget {
               colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Getx(),
+      home: const imagePickerScreen(),
+      // Getx Routing 
+      // getPages: [
+      //   GetPage(name: '/', page: ()=> const Home()),
+      //   GetPage(name: '/screenOne', page: ()=> const ScreenOne(name: "Omkar Gharge",)),
+      //   GetPage(name: '/screenTwo', page: ()=> const ScreenTwo()),
+        
+      // ],
     );
+    
   }
 }
 

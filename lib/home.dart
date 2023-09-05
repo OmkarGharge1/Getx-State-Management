@@ -15,6 +15,7 @@ class Home extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
          Center(child: ElevatedButton(onPressed: (){
+          Get.toNamed('/screenOne');
           Get.size;
          }, child: const Text('Click Me')))
         ]
